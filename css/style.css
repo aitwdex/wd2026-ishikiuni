@@ -1,0 +1,8 @@
+/* 通常（広い画面向け）：横並び */
+.container { display: flex; gap: 1rem; }
+.card { flex: 1; }                 /* 固定pxにせず、伸び縮みさせる */
+
+/* 画面幅が 600px 以下のときだけ適用：縦並びに */
+@media (max-width: 600px) {
+  .container { flex-direction: column; }
+}
